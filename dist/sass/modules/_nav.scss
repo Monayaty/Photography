@@ -1,0 +1,46 @@
+.navbar {
+  padding: 0;
+  box-shadow: 0px 1px 0px #E5E9F2;
+  .nav-menu {
+   .nav-item {
+    @media screen and (max-width: 991px) {
+      padding: 10px 0;
+    }
+     .nav-link {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 0 14px;
+      color: #18191F;
+    }
+   }
+  }
+  @media screen and (max-width: 991px) {
+    .nav-logo {
+      display: none;
+    }
+  }
+  .nav-mob-logo {
+    position: absolute;
+    top: -18px;
+    left: 2%;
+    width: 80px;
+    img {
+      width: 100%;
+      display: none;
+      @media screen and (max-width: 991px) {
+        display: inline-block;
+      }
+    }
+  }
+   .navbar-toggler {
+    border: none;
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    padding: 17px 0;
+  }
+}

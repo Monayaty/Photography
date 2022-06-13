@@ -1,0 +1,31 @@
+
+//therd mixin and uses
+@mixin transisionElement($tran) {
+  -webkit-transition: $tran;
+  -moz-transition: $tran;
+  -o-transition: $tran;
+  -ms-transition: $tran;
+  transition: $tran;
+}
+@mixin box-shadow($px) {
+  -webkit-box-shadow: $px;
+  -moz-box-shadow: $px;
+  -o-box-shadow: $px;
+  -ms-box-shadow: $px;
+  box-shadow: $px;
+}
+@mixin backfaceVisibility($property) {
+  -webkit-backface-visibility: $property;
+  -moz-backface-visibility: $property;
+  -o-backface-visibility: $property;
+  -ms-backface-visibility: $property;
+  backface-visibility: $property;
+}
+
+@mixin transformElment($property) {
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -o-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}

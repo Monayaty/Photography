@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap');
+
+body {
+	font-family: 'Tajawal', sans-serif;
+  }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    display: none;
+}
+body::-webkit-scrollbar-track {
+	background-color: $main-color;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+	// background-color: $dark-color;
+}
+
+body::-webkit-scrollbar-thumb {
+	box-shadow: inset 0 0 10px $second-color;
+	background-color: $main-color;
+}
+
+::-webkit-scrollbar{
+  height: 2px;
+}
+::-webkit-scrollbar-thumb:horizontal{
+  background:#e6e6e6;
+}
+
+// Icon social contact style
+.nav-icons {
+    .nav-item {
+      margin-right: 12px;
+      .nav-link {
+        width: 30px;
+        height: 30px;
+        background: #ddc6db78;
+        border-radius: 50%;
+        @extend %flex-box-center;
+        @include transisionElement(background .3s ease-in-out);
+        i {
+          color: #969BAB;
+          @include transisionElement(color .3s ease-in-out);
+        }
+        &:hover i {
+          color: $main-color;
+        }
+        &:hover {
+          background: #FFECEC;
+        }
+      }
+    }
+  }

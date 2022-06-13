@@ -1,0 +1,127 @@
+footer {
+    margin-top: 35px;
+    padding-top: 35px;
+    background-color: $second-color;
+    .have-problem {
+        .have-problem-title {
+            @extend .header-common;
+            font-size: 22px;
+            padding: 0 20px;
+                &::before {
+                    @media screen and (max-width: 991px) {
+                        top: -15px
+                }
+            }
+        }
+        .have-problem-descr {
+            @extend .font-color-to-descrption;
+            color: $dark-color
+        }
+        .whatsApp-contact {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            img {
+                width: 55px;
+            }
+        }
+    }
+    .lavana-hero {
+        img {
+            margin: -85px auto 5px;
+            display: block;
+            width: 135px;
+        }
+        .lavana-hero-descr {
+            @extend .font-color-to-descrption;
+        }
+        .nav {
+            justify-content: space-between;
+            .nav-link {
+                @extend .font-color-to-descrption;
+                color: $dark-color;
+            }
+        }
+    }
+    .footer-gallary-title {
+        @extend .header-common;
+        font-size: 22px;
+        padding: 0 20px;
+        &::before {
+            @media screen and (max-width: 991px) {
+                top: -15px
+            }
+        }
+    }
+    .gallary-content {
+        margin: 30px;
+       img {
+           width: 31%;
+           object-fit: cover;
+           margin-bottom: 6px;
+       }
+    }
+    .copy-right {
+        background-color: $main-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 70px;
+        padding: 5px 0;
+        .copy-right-content {
+            .nav-item {
+                position: relative;
+                .nav-link {
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    @media screen and (max-width: 836.98px) {
+                        font-size: 15px;
+                        text-align: center;
+                    }
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 6px;
+                    right: 1px;
+                    height: 25px;
+                    width: 1px;
+                    background-color: #FFF;
+                }
+                &:nth-of-type(1) {
+                    &::after {
+                        height: 0;
+                    }
+                }
+            }
+        }
+        .social-media-contact{
+            margin-left: 30px;
+            .nav-link {
+                width: 30px;
+                height: 30px;
+                margin-right: 15px;
+                border-radius: 50%;
+                background-color: #9a21224d;
+                @extend %flex-box-center;
+                @include transisionElement(background .3s ease-in-out);
+                i {
+                  color: $white-color;
+                  @include transisionElement(color .3s ease-in-out);
+                }
+                &:hover i {
+                  color: $main-color;
+                }
+                &:hover {
+                  background: #FFECEC;
+                }
+              }
+        }
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
