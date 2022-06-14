@@ -55,10 +55,11 @@ footer {
     }
     .gallary-content {
         margin: 30px;
+        text-align: center;
        img {
-           width: 31%;
+           width: 28%;
            object-fit: cover;
-           margin-bottom: 6px;
+           margin-bottom: 3px;
        }
     }
     .copy-right {
@@ -77,7 +78,8 @@ footer {
                     line-height: 18px;
                     color: #FFFFFF;
                     @media screen and (max-width: 836.98px) {
-                        font-size: 15px;
+                        font-size: 14px;
+                        padding: 12px;
                         text-align: center;
                     }
                 }
@@ -95,6 +97,9 @@ footer {
                         height: 0;
                     }
                 }
+            }
+            @media screen and (max-width: 836.98px) {
+                justify-content: center;
             }
         }
         .social-media-contact{
