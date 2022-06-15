@@ -1,5 +1,5 @@
 footer {
-    margin-top: 35px;
+    margin-top: 60px;
     padding-top: 35px;
     background-color: $second-color;
     .have-problem {
@@ -8,6 +8,7 @@ footer {
             font-size: 22px;
             padding: 0 20px;
                 &::before {
+                    top: -20px;
                     @media screen and (max-width: 991px) {
                         top: -15px
                 }
@@ -40,6 +41,9 @@ footer {
             .nav-link {
                 @extend .font-color-to-descrption;
                 color: $dark-color;
+                i {
+                    color: $main-color
+                }
             }
         }
     }
@@ -48,6 +52,7 @@ footer {
         font-size: 22px;
         padding: 0 20px;
         &::before {
+            top: -20px;
             @media screen and (max-width: 991px) {
                 top: -15px
             }
@@ -61,6 +66,9 @@ footer {
            object-fit: cover;
            margin-bottom: 3px;
        }
+    }
+    text-area {
+        resize: none;
     }
     .copy-right {
         background-color: $main-color;

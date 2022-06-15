@@ -50,7 +50,8 @@
       }
     }
     .btn-contactUs {
-      @extend %btn-common
+      @extend %btn-common;
+      @extend .btn-animate;
     }
   }
 }
@@ -59,6 +60,7 @@
 // start who-we-are-section
 .who-we-are {
   padding: 50px 0;
+  margin: 40px 0;
   background-color: $main-gray-color;
   .who-we-content {
     .who-we-content-title {
@@ -138,7 +140,8 @@
 // end who-we-are-section
 
 .why-choose-us {
-  padding: 50px 0;
+  padding: 10px 0;
+  margin: 30px 0;
   .why-chooseUs-title {
     @extend .header-common;
   }
@@ -210,6 +213,7 @@
 .services {
   background-color: $second-color;
   padding: 50px 0;
+  margin: 40px 0;
   .services-title {
     @extend .header-common;
   }
@@ -267,13 +271,15 @@
     margin: auto;
     margin-top: 30px;
     @extend %btn-common;
+    @extend .btn-animate;
   }
 }
 
 // start services work
 .services-work {
   overflow-x: hidden;
-  padding: 50px 0;
+  padding: 10px 0;
+  margin: 30px 0;
   .services-work-title {
     @extend .header-common;
   }
@@ -300,7 +306,8 @@
 }
 // start our work
 .our-work {
-  padding: 30px 0;
+  padding: 50px 0;
+  margin: 40px 0;
   background-color: $main-gray-color;
   .our-work-header {
     .our-work-title {
@@ -310,6 +317,11 @@
       @extend .font-color-to-descrption;
       font-weight: 500;
       padding: 10px 9%;
+      @media screen and (max-width: 479.98px) {
+        font-size: 15px;
+        line-height: 30px;
+        padding: 10px 0;
+      }
     }
   }
   .our-work-item {
@@ -328,8 +340,14 @@
       }
       .nav-item {
         display: inline-block !important;
+        margin: 7px 15px;
+        width: 110px;
+        @media screen and (max-width: 991px) {
+          margin: 0 6px;
+        }
       }
       .nav-link {
+        position: relative;
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
@@ -337,7 +355,32 @@
         border: 1px solid $main-color;
         border-radius: 30px;
         margin: 0 15px;
-        min-width: 88px;
+        overflow: hidden;
+        z-index: 999;
+        width: 100%;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          width: 0;
+          height: 0;
+          border-radius: 30px;
+          // border: 1px solid $main-color;
+          @include transisionElement(all .3s ease-in-out);
+          z-index: -99;
+        }
+
+        &:hover::before {
+          width: 100%;
+          height: 100%;
+          left: 0;
+          background-color: $main-color
+        }
+        &:hover {
+          color: $white-color;
+        }
       }
     }
     .nav-pills {
@@ -404,7 +447,7 @@
           // }
           div {
             img {
-              width: 50%;
+              width: 48%;
               @extend .object-height-img;
             }
           }
@@ -440,7 +483,8 @@
 
 // start photography-sevice
 .photography-sevice {
-  padding: 30px;
+    padding: 10px 0;
+    margin: 30px 0;
   .photography-sevice-header {
     .photography-sevice-title {
       @extend .header-common;
@@ -451,6 +495,11 @@
       padding: 10px 9%;
       span {
         color: $main-color;
+      }
+      @media screen and (max-width: 479.98px) {
+        font-size: 15px;
+        line-height: 30px;
+        padding: 10px 0;
       }
     }
   }
@@ -496,6 +545,7 @@
 // start our-achievement
 .our-achievement {
   padding: 50px 0;
+  margin: 40px 0;
   background-color: $second-color;
   .our-achievement-header {
     .our-achievement-title {
@@ -561,7 +611,8 @@
 
 // start questions
 .questions {
-  padding: 50px 0;
+  padding: 10px 0;
+  margin: 40px 0;
   .questions-header {
     .questions-title {
       @extend .header-common;
@@ -601,12 +652,13 @@
             &::after {
               margin-left: initial;
               margin-right: auto;
-              background-image: var(--bs-accordion-btn-icon);
+              // background-image: var(--bs-accordion-btn-icon);
             }
           }
           .accordion-button:not(.collapsed)::after {
-            background-image: var(--bs-accordion-btn-active-icon);
-            // background-color: $main-color;
+            background-image: url(../img/arrowhead-up.png);
+            transform: rotate(0);
+            background-size: 1.10rem;
           }
         }
         .accordion-body{
@@ -616,11 +668,11 @@
           }
         }
         .under-line {
-          margin: 4px 0;
+          height: 0.5px;
           border: 0;
-          border-top: 2px solid #C4C4C4;
+          margin: 4px 0;
           background-color: #C4C4C4;
-          opacity: .7;
+          opacity: 0.7;
         }
       }
     }
@@ -636,7 +688,11 @@
 
 // start contact us
 .contact-us {
+  margin: 40px 0;
   .lavana-contact-us {
+    .contactUs-container {
+      padding-top: 40px;
+    }
     .contact-demo-vedio {
       width: 100%;
       height: 100vh;
@@ -675,18 +731,20 @@
           }
         }
         .btn-contact-us {
-          font-size: 22px;
-          font-weight: 500;
-          line-height: 31px;
           text-align: center;
           display: block;
-          width: 240px;
-          height: 44px;
+          width: 261px;
+          height: 45px;
           border-radius: 6px;
           padding: 2px 0;
           margin: 60px auto 0;
-          color: $main-color;
-          background-color: $white-color
+          background-color: $white-color;
+          .btn-animate-content {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 31px;
+            color: $main-color;
+          }
         }
       }
     }
@@ -783,16 +841,11 @@
       }
       .btn-submit{
         @extend %btn-common;
+        @extend .btn-animate;
+        width: 242px !important;
         display: block;
-        margin: 20px auto;
+        margin: 20px auto !important;
       }
     }
   }
 }
-
-// start map
-.map-content {
-  padding: 25px 0;
-}
-// end map
-

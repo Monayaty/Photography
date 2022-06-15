@@ -47,19 +47,29 @@
 }
 
 %btn-common {
-  background-color: $main-color;
-  color: $white-color;
   text-align: center;
-  font-size: 20px;
-  width: 237px;
-  height: 40px;
+  background-color: $main-color;
+  width: 241px;
+  height: 41px;
+  margin: 10px auto !important;
   border-radius: 6px;
-  padding: 2px 0;
+  border: 1px solid $main-color;
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
   @media screen and (max-width: 425px) {
     font-size: 17px;
     width: 200px;
     height: 35px;
   }
+}
+
+.btn-animate {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: auto;
 }
 
 .contact-info {

@@ -55,3 +55,111 @@ body::-webkit-scrollbar-thumb {
       }
     }
   }
+
+.btn-animate {
+  .btn-animate-content {
+    position: relative;
+    font-size: 20px;
+    color: $white-color;
+    text-decoration: none;
+    z-index: 1030;
+  }
+}
+
+.btn-animate span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #FFF;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.lavana-contact-us .contact-demo-vedio .btn-animate span {
+  background-color: $main-color;
+}
+
+.btn-animate:hover .btn-animate-content {
+  color: $main-color;
+}
+.lavana-contact-us .contact-demo-vedio .btn-animate:hover .btn-animate-content {
+  color: $white-color !important;
+}
+
+.btn-animate:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
