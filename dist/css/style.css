@@ -345,6 +345,18 @@ body::-webkit-scrollbar-thumb {
 }
 .who-we-are .gallery-content .gallery-display {
   padding: 10px;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+.who-we-are .gallery-content .gallery-display:hover {
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -o-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
 }
 .who-we-are .gallery-content .gallery-content-item:nth-of-type(1) {
   width: 25%;
@@ -411,6 +423,13 @@ body::-webkit-scrollbar-thumb {
 .why-choose-us .why-choose-us-container .feature-content {
   text-align: center;
 }
+.why-choose-us .why-choose-us-container .feature-content .feature-content-item {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .why-choose-us .why-choose-us-container .feature-content .feature-content-item .feature-icon {
   width: 75px;
   height: 75px;
@@ -453,6 +472,13 @@ body::-webkit-scrollbar-thumb {
   .why-choose-us .why-choose-us-container .feature-content .feature-content-item .feature-content-details {
     font-size: 16px;
   }
+}
+.why-choose-us .why-choose-us-container .feature-content .feature-content-item:hover {
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -o-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
 }
 @media screen and (max-width: 767.98px) {
   .why-choose-us .why-choose-us-container .feature-content {
@@ -532,6 +558,12 @@ body::-webkit-scrollbar-thumb {
 }
 .services-work .services-work-content .services-work-container .services-work-item {
   text-align: center;
+  padding: 10px 0;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 .services-work .services-work-content .services-work-container .services-work-item .services-work-heading {
   margin-top: 25px;
@@ -543,6 +575,27 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   color: #575F6B;
   padding: 0 13%;
+}
+.services-work .services-work-content .services-work-container .services-work-item:hover {
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.services-work .services-work-content .services-work-container .services-work-item img {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.services-work .services-work-content .services-work-container .services-work-item:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .our-work {
@@ -738,7 +791,8 @@ body::-webkit-scrollbar-thumb {
 .our-achievement {
   padding: 50px 0;
   margin: 40px 0;
-  background-color: #FFECEC;
+  background: url(../img/bg-section.png) no-repeat;
+  background-size: cover;
 }
 .our-achievement .our-achievement-header .our-achievement-descr {
   font-weight: 500;
@@ -763,6 +817,11 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-evenly;
   background: rgba(255, 203, 203, 0.8);
   border-radius: 20px;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 .our-achievement .our-achievement-content .our-achievement-item .our-achievement-item-details {
   font-weight: 400;
@@ -788,6 +847,27 @@ body::-webkit-scrollbar-thumb {
     width: 240px;
     margin: 0 auto 15px;
   }
+}
+.our-achievement .our-achievement-content .our-achievement-item img {
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+.our-achievement .our-achievement-content .our-achievement-item:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.our-achievement .our-achievement-content .our-achievement-item:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 @media screen and (max-width: 1200px) {
   .our-achievement .our-achievement-content {

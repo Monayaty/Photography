@@ -81,6 +81,10 @@
     justify-content: space-between;
    .gallery-display {
     padding: 10px;
+    @include transisionElement(transform .2s ease-in-out);
+    &:hover {
+      @include transformElment(scale(1.07))
+    }
    }
 
     .gallery-content-item {
@@ -162,6 +166,7 @@
     .feature-content {
       text-align: center;
       .feature-content-item {
+        @include transisionElement(all .3s ease-in-out);
         .feature-icon {
           width: 75px;
           height: 75px;
@@ -196,6 +201,9 @@
           @media screen and (max-width: 767.98px) {
             font-size: 16px;
           }
+        }
+        &:hover {
+          @include transformElment(scale(1.07))
         }
       }
       @media screen and (max-width: 767.98px) {
@@ -288,6 +296,8 @@
     .services-work-container {
       .services-work-item {
         text-align: center;
+        padding: 10px 0;
+        @include transisionElement(transform .2s ease-in-out);
         .services-work-heading {
           @extend %font-color-to-cart;
           margin-top: 25px;
@@ -299,6 +309,16 @@
           text-align: center;
           color: #575F6B;
           padding: 0 13%;
+        }
+
+        &:hover {
+          @include transformElment(scale(1.04));
+        }
+        img {
+          @include transisionElement(all .3s ease-in-out);
+        }
+        &:hover img{
+          @include transformElment(scale(1.2));
         }
       }
     }
@@ -552,7 +572,8 @@
 .our-achievement {
   padding: 50px 0;
   margin: 40px 0;
-  background-color: $second-color;
+  background: url(../img/bg-section.png) no-repeat;
+  background-size: cover;
   .our-achievement-header {
     .our-achievement-title {
       @extend .header-common;
@@ -603,6 +624,16 @@
       @media screen and (max-width: 574.98px) {
         width: 240px;
         margin: 0 auto 15px;
+      }
+      @include transisionElement(transform .2s ease-in-out);
+      img {
+        @include transisionElement(transform .2s ease-in-out);
+      }
+      &:hover {
+        @include transformElment(scale(1.05))
+      }
+      &:hover img {
+        @include transformElment(scale(1.2))
       }
     }
     @media screen and (max-width: 1200px) {
