@@ -14,11 +14,16 @@ $('.services-work-content').slick({
   autoplaySpeed: 0,
   speed: 2000,
   cssEase: 'linear',
+  mobileFirst: true,
   rtl: true,
   responsive: [{
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 3,
+    }
+  },{
     breakpoint: 991,
     settings: {
-      mobileFirst: true,
       slidesToShow: 2,
     }
   },{
