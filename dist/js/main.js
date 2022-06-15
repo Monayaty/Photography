@@ -175,6 +175,10 @@ window.onload = function() {
 
 
 
+$("#btnMore").click(function(){
+  $(".display-img").addClass("loaded-item");
+  $(".display-img").removeClass("hidden-item");
+});
 
 
 

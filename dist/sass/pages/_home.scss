@@ -505,6 +505,9 @@
       }
     }
   }
+  .btn-MoreImg {
+    @extend %btn-common;
+  }
 }
 
 // start photography-sevice

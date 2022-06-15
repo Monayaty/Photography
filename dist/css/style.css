@@ -50,7 +50,7 @@ footer .copy-right .social-media-contact .nav-link, .who-we-are .gallery-content
   margin: 50px 0 10px;
 }
 
-.contact-us .lavana-contact-us .lavana-form .btn-submit, .services .btn-servicesMore, .hero-section .hero-sec-descr .btn-contactUs {
+.contact-us .lavana-contact-us .lavana-form .btn-submit, .our-work .btn-MoreImg, .services .btn-servicesMore, .hero-section .hero-sec-descr .btn-contactUs {
   text-align: center;
   background-color: #B92728;
   width: 241px;
@@ -59,12 +59,12 @@ footer .copy-right .social-media-contact .nav-link, .who-we-are .gallery-content
   border-radius: 6px;
   border: 1px solid #B92728;
 }
-.contact-us .lavana-contact-us .lavana-form .btn-submit:focus, .services .btn-servicesMore:focus, .hero-section .hero-sec-descr .btn-contactUs:focus {
+.contact-us .lavana-contact-us .lavana-form .btn-submit:focus, .our-work .btn-MoreImg:focus, .services .btn-servicesMore:focus, .hero-section .hero-sec-descr .btn-contactUs:focus {
   outline: 0;
   box-shadow: none;
 }
 @media screen and (max-width: 425px) {
-  .contact-us .lavana-contact-us .lavana-form .btn-submit, .services .btn-servicesMore, .hero-section .hero-sec-descr .btn-contactUs {
+  .contact-us .lavana-contact-us .lavana-form .btn-submit, .our-work .btn-MoreImg, .services .btn-servicesMore, .hero-section .hero-sec-descr .btn-contactUs {
     font-size: 17px;
     width: 200px;
   }
@@ -262,6 +262,27 @@ body::-webkit-scrollbar-thumb {
     right: 50%;
     width: 375px;
     height: 375px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .hidden-item {
+    display: none !important;
+    transform: translateY(-100%);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+
+  .loaded-item {
+    display: block;
+    transform: translateY(0);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
 }
 .hero-section {
@@ -732,7 +753,6 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
   }
 }
-
 .photography-sevice {
   padding: 10px 0;
   margin: 30px 0;
