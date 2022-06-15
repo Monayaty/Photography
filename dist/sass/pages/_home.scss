@@ -340,7 +340,7 @@
       }
       .nav-item {
         display: inline-block !important;
-        margin: 7px 15px;
+        margin: 9px 15px;
         width: 110px;
         @media screen and (max-width: 991px) {
           margin: 0 6px;
@@ -449,6 +449,12 @@
             img {
               width: 48%;
               @extend .object-height-img;
+            }
+            @media screen and (max-width:767.98px) {
+              flex-direction: column;
+              img {
+                width: 100%;
+              }
             }
           }
         }
@@ -844,7 +850,7 @@
         @extend .btn-animate;
         width: 242px !important;
         display: block;
-        margin: 20px auto !important;
+        margin: 21px auto !important;
       }
     }
   }

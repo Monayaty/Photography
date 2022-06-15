@@ -51,7 +51,7 @@
   background-color: $main-color;
   width: 241px;
   height: 41px;
-  margin: 10px auto !important;
+  margin: 8px auto !important;
   border-radius: 6px;
   border: 1px solid $main-color;
   &:focus {
@@ -61,7 +61,7 @@
   @media screen and (max-width: 425px) {
     font-size: 17px;
     width: 200px;
-    height: 35px;
+    // height: 35px;
   }
 }
 

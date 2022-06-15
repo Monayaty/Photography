@@ -55,7 +55,7 @@ footer .copy-right .social-media-contact .nav-link, .who-we-are .gallery-content
   background-color: #B92728;
   width: 241px;
   height: 41px;
-  margin: 10px auto !important;
+  margin: 8px auto !important;
   border-radius: 6px;
   border: 1px solid #B92728;
 }
@@ -67,7 +67,6 @@ footer .copy-right .social-media-contact .nav-link, .who-we-are .gallery-content
   .contact-us .lavana-contact-us .lavana-form .btn-submit, .services .btn-servicesMore, .hero-section .hero-sec-descr .btn-contactUs {
     font-size: 17px;
     width: 200px;
-    height: 35px;
   }
 }
 
@@ -580,7 +579,7 @@ body::-webkit-scrollbar-thumb {
 }
 .our-work .our-work-item .nav .nav-item {
   display: inline-block !important;
-  margin: 7px 15px;
+  margin: 9px 15px;
   width: 110px;
 }
 @media screen and (max-width: 991px) {
@@ -654,6 +653,14 @@ body::-webkit-scrollbar-thumb {
 }
 .our-work .all-categories-content .all-categories-content-item > div:nth-of-type(4) div img {
   width: 48%;
+}
+@media screen and (max-width: 767.98px) {
+  .our-work .all-categories-content .all-categories-content-item > div:nth-of-type(4) div {
+    flex-direction: column;
+  }
+  .our-work .all-categories-content .all-categories-content-item > div:nth-of-type(4) div img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .our-work .all-categories-content .all-categories-content-item > div {
@@ -976,7 +983,7 @@ body::-webkit-scrollbar-thumb {
 .contact-us .lavana-contact-us .lavana-form .btn-submit {
   width: 242px !important;
   display: block;
-  margin: 20px auto !important;
+  margin: 21px auto !important;
 }
 
 .navbar {
